@@ -15,15 +15,23 @@ struct Person {
 
     var getNameAndSurname: String { "\(name) \(surname)" }
 
-    static func getRandomPersons(count: Int) -> [Person] {
+    static func getRandomPersons() -> [Person] {
         var retunedPersons: [Person] = []
 
-        for _ in 1...count {
+        while true {
+            guard let randomNameIndex = mockDatabase.names.indices.randomElement(),
+                  let randomSurnameIndex = mockDatabase.surnames.indices.randomElement(),
+                  let randomPhoneIndex = mockDatabase.phoneNumbers.indices.randomElement(),
+                  let randomMailIndex = mockDatabase.mails.indices.randomElement()
+            else { return retunedPersons }
+        
+        
+            
             retunedPersons.append(Person(
-                name: mockDatabase.names.randomElement() ?? "",
-                surname: mockDatabase.surnames.randomElement() ?? "",
-                phoneNumber: mockDatabase.phoneNumbers.randomElement() ?? "",
-                mail: mockDatabase.mails.randomElement() ?? ""
+                name: mockDatabase.names.remove(at: randomNameIndex),
+                surname: mockDatabase.surnames.remove(at: randomSurnameIndex),
+                phoneNumber: mockDatabase.phoneNumbers.remove(at: randomPhoneIndex),
+                mail: mockDatabase.mails.remove(at: randomMailIndex)
             ))
         }
         return retunedPersons
