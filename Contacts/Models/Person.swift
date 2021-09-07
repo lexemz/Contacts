@@ -12,6 +12,20 @@ struct Person {
     let surname: String
     let phoneNumber: String
     let mail: String
-    
+
     var getNameAndSurname: String { "\(name) \(surname)" }
+
+    static func getRandomPersons(count: Int) -> [Person] {
+        var retunedPersons: [Person] = []
+
+        for _ in 1...count {
+            retunedPersons.append(Person(
+                name: mockDatabase.names.randomElement() ?? "",
+                surname: mockDatabase.surnames.randomElement() ?? "",
+                phoneNumber: mockDatabase.phoneNumbers.randomElement() ?? "",
+                mail: mockDatabase.mails.randomElement() ?? ""
+            ))
+        }
+        return retunedPersons
+    }
 }
