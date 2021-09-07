@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				78EC361A26E797FE0006F2A3 /* Main.storyboard */,
-				78EC363926E80ABC0006F2A3 /* DetailContactInfoViewController.swift */,
 				78EC361F26E798010006F2A3 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -102,6 +101,7 @@
 				78EC363026E7A27A0006F2A3 /* GroupedContactListTableViewController.swift */,
 				78EC362E26E7A1EC0006F2A3 /* ContactListTableViewController.swift */,
 				78EC362826E7988E0006F2A3 /* ContactsTabBarController.swift */,
+				78EC363926E80ABC0006F2A3 /* DetailContactInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
