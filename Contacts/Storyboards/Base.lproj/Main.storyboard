@@ -98,16 +98,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cA6-NX-4my"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6p-Lv-13e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2438" y="-224"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="ktW-tt-vGE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="miL-1i-pgQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aiy-zI-7yj"/>
+                    <tabBarItem key="tabBarItem" title="List" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="aiy-zI-7yj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3Yh-He-Ooy">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -122,11 +123,11 @@
             </objects>
             <point key="canvasLocation" x="640.57971014492762" y="-224.33035714285714"/>
         </scene>
-        <!--Item-->
+        <!--Group-->
         <scene sceneID="3aZ-ni-w96">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g8H-2S-6A7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LFf-00-Gxs"/>
+                    <tabBarItem key="tabBarItem" title="Group" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="LFf-00-Gxs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xaS-Ei-hT9">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -143,6 +144,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
