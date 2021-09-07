@@ -56,15 +56,39 @@
 		78EC361326E797FE0006F2A3 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				78EC361426E797FE0006F2A3 /* AppDelegate.swift */,
-				78EC361626E797FE0006F2A3 /* SceneDelegate.swift */,
-				78EC361A26E797FE0006F2A3 /* Main.storyboard */,
-				78EC362826E7988E0006F2A3 /* ContactsTabBarController.swift */,
+				78EC362C26E798EB0006F2A3 /* ViewControllers */,
+				78EC362B26E798DC0006F2A3 /* App */,
+				78EC362A26E798CB0006F2A3 /* Storyboards */,
 				78EC361D26E798010006F2A3 /* Assets.xcassets */,
-				78EC361F26E798010006F2A3 /* LaunchScreen.storyboard */,
-				78EC362226E798010006F2A3 /* Info.plist */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		78EC362A26E798CB0006F2A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				78EC361A26E797FE0006F2A3 /* Main.storyboard */,
+				78EC361F26E798010006F2A3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		78EC362B26E798DC0006F2A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78EC361626E797FE0006F2A3 /* SceneDelegate.swift */,
+				78EC361426E797FE0006F2A3 /* AppDelegate.swift */,
+				78EC362226E798010006F2A3 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		78EC362C26E798EB0006F2A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78EC362826E7988E0006F2A3 /* ContactsTabBarController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K5L7239SK4;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = Contacts/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K5L7239SK4;
-				INFOPLIST_FILE = Contacts/Info.plist;
+				INFOPLIST_FILE = Contacts/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
