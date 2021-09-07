@@ -17,6 +17,7 @@
 		78EC363126E7A27A0006F2A3 /* GroupedContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC363026E7A27A0006F2A3 /* GroupedContactListTableViewController.swift */; };
 		78EC363326E7A6CB0006F2A3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC363226E7A6CB0006F2A3 /* Person.swift */; };
 		78EC363526E7AA370006F2A3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC363426E7AA370006F2A3 /* DataManager.swift */; };
+		78EC363A26E80ABC0006F2A3 /* DetailContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EC363926E80ABC0006F2A3 /* DetailContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		78EC363026E7A27A0006F2A3 /* GroupedContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupedContactListTableViewController.swift; path = Contacts/ViewControllers/GroupedContactListTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		78EC363226E7A6CB0006F2A3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		78EC363426E7AA370006F2A3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		78EC363926E80ABC0006F2A3 /* DetailContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				78EC361A26E797FE0006F2A3 /* Main.storyboard */,
+				78EC363926E80ABC0006F2A3 /* DetailContactInfoViewController.swift */,
 				78EC361F26E798010006F2A3 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -183,6 +186,7 @@
 			files = (
 				78EC363326E7A6CB0006F2A3 /* Person.swift in Sources */,
 				78EC361526E797FE0006F2A3 /* AppDelegate.swift in Sources */,
+				78EC363A26E80ABC0006F2A3 /* DetailContactInfoViewController.swift in Sources */,
 				78EC363126E7A27A0006F2A3 /* GroupedContactListTableViewController.swift in Sources */,
 				78EC363526E7AA370006F2A3 /* DataManager.swift in Sources */,
 				78EC361726E797FE0006F2A3 /* SceneDelegate.swift in Sources */,
