@@ -17,6 +17,7 @@ struct Person {
 
     static func getRandomPersons() -> [Person] {
         var retunedPersons: [Person] = []
+        let mockDatabase = DataManager.shared
 
         while true {
             guard let randomNameIndex = mockDatabase.names.indices.randomElement(),
