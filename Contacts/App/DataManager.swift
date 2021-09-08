@@ -52,8 +52,8 @@ class DataManager {
         "keupeugramiceu-7616@yopmail.com",
         "nifecauweixa-1892@yopmail.com"
     ]
-    
+
     static let shared = DataManager()
-    
+
     private init() {}
 }

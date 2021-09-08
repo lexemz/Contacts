@@ -25,15 +25,15 @@ struct Person {
                   let randomPhoneIndex = mockDatabase.phoneNumbers.indices.randomElement(),
                   let randomMailIndex = mockDatabase.mails.indices.randomElement()
             else { return retunedPersons }
-        
-        
-            
-            retunedPersons.append(Person(
+
+            let randomPerson = Person(
                 name: mockDatabase.names.remove(at: randomNameIndex),
                 surname: mockDatabase.surnames.remove(at: randomSurnameIndex),
                 phoneNumber: mockDatabase.phoneNumbers.remove(at: randomPhoneIndex),
                 mail: mockDatabase.mails.remove(at: randomMailIndex)
-            ))
+            )
+
+            retunedPersons.append(randomPerson)
         }
         return retunedPersons
     }
