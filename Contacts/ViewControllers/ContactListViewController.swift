@@ -1,5 +1,5 @@
 //
-//  ContactListTableViewController.swift
+//  ContactListViewController.swift
 //  Contacts
 //
 //  Created by Igor on 07.09.2021.
