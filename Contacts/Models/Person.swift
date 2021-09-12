@@ -18,23 +18,27 @@ struct Person {
     static func getRandomPersons() -> [Person] {
         var retunedPersons: [Person] = []
         let mockDatabase = DataManager.shared
-
-        while true {
-            guard let randomNameIndex = mockDatabase.names.indices.randomElement(),
-                  let randomSurnameIndex = mockDatabase.surnames.indices.randomElement(),
-                  let randomPhoneIndex = mockDatabase.phoneNumbers.indices.randomElement(),
-                  let randomMailIndex = mockDatabase.mails.indices.randomElement()
-            else { return retunedPersons }
-
-            let randomPerson = Person(
-                name: mockDatabase.names.remove(at: randomNameIndex),
-                surname: mockDatabase.surnames.remove(at: randomSurnameIndex),
-                phoneNumber: mockDatabase.phoneNumbers.remove(at: randomPhoneIndex),
-                mail: mockDatabase.mails.remove(at: randomMailIndex)
-            )
-
-            retunedPersons.append(randomPerson)
+        
+        let shufledNames = mockDatabase.names.shuffled()
+        let shufledSurnames = mockDatabase.surnames
+        let shufledMails = mockDatabase.mails
+        let shufledPhones = mockDatabase.phoneNumbers
+        
+        let personsCount = min(shufledNames.count,
+                               shufledSurnames.count,
+                               shufledMails.count,
+                               shufledPhones.count)
+        
+        for i in 0..<personsCount {
+            let generatedPerson = Person(
+                name: shufledNames[i],
+                surname: shufledSurnames[i],
+                phoneNumber: shufledPhones[i],
+                mail: shufledMails[i])
+            
+            retunedPersons.append(generatedPerson)
         }
+        
         return retunedPersons
     }
 }
