@@ -19,12 +19,10 @@ class ContactsTabBarController: UITabBarController {
     private func pushDataOnViewControllers() {
         guard let viewControllers = viewControllers else { return }
 
-        for vc in viewControllers {
-            guard let nc = vc as? UINavigationController else { return }
-
-            if let contactListVC = nc.topViewController as? ContactListViewController {
+        for viewController in viewControllers {
+            if let contactListVC = viewController as? ContactListViewController {
                 contactListVC.contacts = contasts
-            } else if let gContactListVC = nc.topViewController as? GroupedContactListViewController {
+            } else if let gContactListVC = viewController as? GroupedContactListViewController {
                 gContactListVC.contacts = contasts
             }
         }
